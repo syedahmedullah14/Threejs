@@ -15,3 +15,12 @@ const material = new THREE.MeshLambertMaterial({color: '#468585', emissive: '#46
 const cube = new THREE.Mesh(geometry, material);
 scene.add(cube);
 
+//add lighting 
+const light = new THREE.DirectionalLight(0x9CDBA6, 10);
+light.position.set(1, 1, 1); //x, y, z coordinates
+scene.add(light);
+
+//create a renderer
+const renderer = new THREE.WebGLRenderer();
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.body.appendChild(renderer.domElement);
