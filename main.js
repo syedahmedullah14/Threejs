@@ -13,3 +13,5 @@ const geometry = new THREE.BoxGeometry();
 const material = new THREE.MeshLambertMaterial({color: '#468585', emissive: '#468585'});
 
 const cube = new THREE.Mesh(geometry, material);
+scene.add(cube);
+
